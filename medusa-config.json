@@ -1,0 +1,11 @@
+module.exports = {
+  projectConfig: {
+    // Other project configurations...
+    database_extra: process.env.NODE_ENV !== "development" ?
+      {
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      } : {}, // Use SSL in production to connect to the database securely
+  },
+};
