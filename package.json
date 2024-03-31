@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "start": "npm run migrate && npm run build && medusa start",
-    "migrate": "medusa migrations run",
-    "build": "your-build-command-here"
-  }
-}
